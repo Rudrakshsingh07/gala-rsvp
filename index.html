@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The 2023–26 Gala Night · RSVP</title>
+<link rel="icon" type="image/png" href="assets/favicon.png" />
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Special+Elite&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet" />
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -193,6 +194,25 @@
     font-size: 20px; font-style: italic;
     color: #222; margin-bottom: 0.3rem;
   }
+  .scattered-img {
+    position: absolute;
+    width: 175px;
+    height: auto;
+    z-index: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease;
+  }
+  .scattered-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .scattered-img {
+      width: 125px;
+    }
+  }
 </style>
 </head>
 <body>
@@ -207,6 +227,44 @@
   <div class="star silver" style="top:22%;right:4%;font-size:20px;transform:rotate(5deg);">★</div>
   <div class="star red"    style="bottom:15%;left:6%;font-size:14px;">★</div>
   <div class="star silver" style="bottom:10%;right:8%;font-size:18px;">★</div>
+
+  <!-- Scattered Images -->
+  <div class="scattered-img" style="top: 5%; left: 2%; transform: rotate(-8deg);">
+    <img src="assets/1.png" alt="">
+  </div>
+  <div class="scattered-img" style="top: 15%; right: 3%; transform: rotate(12deg);">
+    <img src="assets/2.png" alt="">
+  </div>
+  
+  <!-- Resized images 3 and 4 (+10% initially, now +25% total) -->
+  <div class="scattered-img" style="top: 40%; left: -20px; transform: rotate(5deg); width: 193px;">
+    <img src="assets/3.png" alt="">
+  </div>
+  <div class="scattered-img" style="top: 55%; right: -15px; transform: rotate(-10deg); width: 193px;">
+    <img src="assets/4.png" alt="">
+  </div>
+
+  <!-- Images 5 and 6 (Multiplied) -->
+  <div class="scattered-img" style="bottom: 10%; left: 4%; transform: rotate(-15deg);">
+    <img src="assets/5.png" alt="">
+  </div>
+  <div class="scattered-img" style="top: 25%; left: 15%; transform: rotate(20deg); width: 125px; opacity: 0.6;">
+    <img src="assets/5.png" alt="">
+  </div>
+  
+  <div class="scattered-img" style="bottom: 20%; right: 5%; transform: rotate(8deg);">
+    <img src="assets/6.png" alt="">
+  </div>
+  <div class="scattered-img" style="bottom: 5%; right: 25%; transform: rotate(-12deg); width: 150px;">
+    <img src="assets/6.png" alt="">
+  </div>
+  <div class="scattered-img" style="top: 65%; left: 10%; transform: rotate(45deg); width: 100px; opacity: 0.7;">
+    <img src="assets/6.png" alt="">
+  </div>
+
+  <div class="scattered-img" style="bottom: 45%; left: 10%; transform: rotate(2deg); width: 150px; opacity: 0.8;">
+    <img src="assets/7.png" alt="">
+  </div>
 
   <!-- Header -->
   <div class="header-block">
